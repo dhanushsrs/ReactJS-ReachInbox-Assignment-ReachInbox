@@ -8,7 +8,7 @@
 //     let navigate = useNavigate();
 
 //     const handleLogin = () => {
-//         window.location.href = 'https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=http://localhost:3000';
+//         window.location.href = 'https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://reactjs-reachinbox-assignment-reachinbox.onrender.com';
 //     };
 
 //     React.useEffect(() => {
