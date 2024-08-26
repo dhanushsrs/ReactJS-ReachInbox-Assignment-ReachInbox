@@ -1,0 +1,34 @@
+.inbox {
+  padding: 20px;
+  background-color: #fff;
+}
+
+.email-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.email-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.email-list li:hover {
+  background-color: #f1f3f4;
+}
+
+.email-sender {
+  font-weight: bold;
+}
+
+.email-subject {
+  margin-left: 20px;
+  flex-grow: 1;
+}
+
+.email-date {
+  color: gray;
+}

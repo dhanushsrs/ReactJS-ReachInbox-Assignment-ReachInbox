@@ -1,0 +1,396 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* App.css */
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  background-color: #1E1E1E; /* Dark mode */
+  color: #fff;
+}
+
+.main-content {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.email-list-container, .email-detail-container, .lead-detail-container {
+  border-left: 1px solid #333;
+}
+
+.email-list-container {
+  width: 20%;
+  background-color: #2A2A2A;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.email-detail-container {
+  width: 50%;
+  background-color: #2A2A2A;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.lead-detail-container {
+  width: 30%;
+  background-color: #2A2A2A;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #202020;
+    color: #fff;
+    padding: 20px;
+}
+
+.inbox-list {
+    margin-top: 20px;
+}
+
+.inbox-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #303030;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.inbox-item.active {
+    background-color: #444444;
+}
+
+.email-item {
+    padding: 15px;
+    border-bottom: 1px solid #444;
+}
+
+.email-detail {
+    padding: 20px;
+    background-color: #252525;
+    border-radius: 8px;
+}
+
+.email-body {
+    margin-top: 20px;
+}
+
+.reply-button {
+    background-color: #008CFF;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/* Global Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: black;
+  color: #202124;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+/* Sidebar - Gmail-like look */
+.sidebar {
+  width: 250px;
+  background-color: #202124;
+  color: #E8EAED;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.sidebar input {
+  background-color: #303134;
+  color: #E8EAED;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.inbox-list {
+  list-style: none;
+  padding: 0;
+}
+
+.inbox-item {
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.inbox-item.active {
+  background-color: #5F6368;
+}
+
+.inbox-item:hover {
+  background-color: #303134;
+}
+
+/* Email List */
+.email-list-container {
+  width: 25%;
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-right: 1px solid #E0E0E0;
+  overflow-y: scroll;
+}
+
+.email-list h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #5F6368;
+}
+
+.email-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.email-item:hover {
+  background-color: #F1F3F4;
+  border-color: #DADCE0;
+}
+
+.email-name {
+  font-weight: bold;
+  color: #3C4043;
+}
+
+.email-date {
+  color: #5F6368;
+}
+
+.email-status {
+  font-size: 12px;
+  color: #188038; /* Green for Interested */
+  padding: 5px 10px;
+  background-color: #E6F4EA;
+  border-radius: 12px;
+}
+
+/* Email Detail View */
+.email-detail-container {
+  width: 45%;
+  background-color: #FFFFFF;
+  padding: 20px;
+  overflow-y: auto;
+  border-right: 1px solid #E0E0E0;
+}
+
+.email-detail h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #202124;
+}
+
+.email-info {
+  margin-bottom: 10px;
+}
+
+.email-info p {
+  margin: 0;
+  color: #5F6368;
+}
+
+.email-body {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3C4043;
+  margin-top: 20px;
+  white-space: pre-wrap; /* Keeps new lines in the text */
+}
+
+.reply-button {
+  display: block;
+  background-color: #1A73E8;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.reply-button:hover {
+  background-color: #1765CC;
+}
+
+/* Lead Details */
+.lead-detail-container {
+  width: 30%;
+  background-color: #FFFFFF;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.lead-details h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #202124;
+  margin-bottom: 10px;
+}
+
+.lead-details p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #5F6368;
+}
+
+.lead-details strong {
+  font-weight: 500;
+  color: #3C4043;
+}
+
+.activities h4 {
+  font-size: 15px;
+  color: #202124;
+  margin-top: 20px;
+}
+
+.activities p {
+  font-size: 14px;
+  color: #5F6368;
+}
+
+/* Scrollable areas */
+.email-list-container, .email-detail-container, .lead-detail-container {
+  scrollbar-width: thin;
+  scrollbar-color: #C1C1C1 #FFFFFF;
+}
+
+.email-list-container::-webkit-scrollbar, .email-detail-container::-webkit-scrollbar, .lead-detail-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.email-list-container::-webkit-scrollbar-thumb, .email-detail-container::-webkit-scrollbar-thumb, .lead-detail-container::-webkit-scrollbar-thumb {
+  background-color: #C1C1C1;
+  border-radius: 5px;
+}
+
+.email-list-container::-webkit-scrollbar-track, .email-detail-container::-webkit-scrollbar-track, .lead-detail-container::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  display: flex;
+  flex-grow: 1;
+  overflow: hidden;
+}
+
+.inbox, .email-detail, .lead-details {
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.inbox {
+  flex: 1;
+  background-color: #1765CC;
+}
+
+.email-detail {
+  flex: 2;
+  background-color: black;
+  border-right: 1px solid #e0e0e0;
+}
+
+.lead-details {
+  flex: 1;
+  background-color: #ffffff;
+}
+
+.compose-button {
+  display: block;
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.compose-button:hover {
+  background-color: #1765cc;
+}

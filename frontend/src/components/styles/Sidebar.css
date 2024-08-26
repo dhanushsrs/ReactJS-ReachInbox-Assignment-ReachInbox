@@ -1,0 +1,41 @@
+.sidebar {
+  width: 200px;
+  background-color: #202124;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: #fff;
+}
+
+.folder-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.folder-list li {
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.folder-list li:hover,
+.folder-list li.active {
+  background-color: #3c4043;
+}
+
+.compose-button {
+  display: block;
+  background-color: #1a73e8;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.compose-button:hover {
+  background-color: #1765cc;
+}

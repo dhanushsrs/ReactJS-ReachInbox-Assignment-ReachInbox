@@ -1,0 +1,35 @@
+.compose-email {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .compose-email h2 {
+    margin-bottom: 15px;
+  }
+  
+  .compose-email input, .compose-email textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .compose-email button {
+    padding: 10px 20px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .compose-email button:hover {
+    background-color: #1765cc;
+  }
+  
