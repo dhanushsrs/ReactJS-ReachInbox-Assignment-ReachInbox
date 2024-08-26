@@ -91,7 +91,7 @@ const Login = () => {
 
     // Function to handle Google login
     const handleLogin = () => {
-        window.location.href = 'https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=http://localhost:3000';
+        window.location.href = 'https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://reactjs-reachinbox-assignment-reachinbox-ddsg.onrender.com';
     };
 
     // Handle token if present in the URL after login redirect
