@@ -33,6 +33,7 @@
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { IoMdMail } from "react-icons/io";
 
 // Add some inline styles for better visual representation
 const styles = {
@@ -117,13 +118,15 @@ const Login = () => {
 
                 {/* Google Sign In Button */}
                 <button onClick={handleLogin} style={styles.button}>
-                    <img
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png"
-                        alt="Google Icon"
-                        style={{ width: '20px', marginRight: '8px', verticalAlign: 'middle' }}
-                    />
-                    Sign Up with Google
-                </button>
+                      <IoMdMail
+                          style={{
+                               width: "35px",
+                               verticalAlign: "middle",
+                                }}
+                          alt="Google Icon"
+                      />
+          Sign Up with Google
+        </button>
 
                 {/* Create an Account Button */}
                 <button style={{ ...styles.button, ...styles.createAccountButton }}>
